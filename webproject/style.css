@@ -1,0 +1,472 @@
+
+.container{
+   margin:0 auto;
+   max-width: 1200px;
+
+}
+
+section{
+  padding:6px;
+}
+
+.btn,
+.opt-btn,
+.del-btn{
+   display: block;
+   width: 96%;
+   cursor: pointer;
+   text-align: center;
+   background-color: blue;
+   border-radius: 5px;
+   color:white;
+   font-size: 15px;
+   padding:5px 5px;
+   margin-top: 1px;
+}
+
+.btn:hover,
+.opt-btn:hover,
+.del-btn:hover{
+   background-color: black;
+}
+
+.opt-btn{
+   background-color: red;
+   font-size:20px;
+}
+
+.del-btn{
+   background-color: orange;
+   margin-top: 0;
+   font-size:20px;
+}
+
+.opt-btn i,
+.del-btn i{
+   padding-right: 7px;
+}
+
+.add{
+   background-color: grey;
+   max-width: 800px;
+   border-radius: 2px;
+   margin-top: 2px;
+   padding:4px;
+   margin:0 auto;
+}
+
+.add h3{
+   font-size: 30px;
+   color:black;
+   margin-bottom: 4px;
+   text-align: center;
+}
+
+.add .box{
+   padding:4px 4px;
+   font-size: 15px;
+   color:black;
+   width: 95%;
+   border-radius: 5px;
+   background-color: white;
+   margin:2px 0;
+   text-transform: none;
+}
+
+.header{
+   background-color: lightblue;
+   top:0; left:0;
+   position: sticky;
+   z-index: 1000;
+}
+
+.header .flex{
+   display: flex;
+   padding:10px 10px;
+   margin:0 auto;
+   align-items: center;
+   max-width: 1200px;
+}
+
+.header .flex .logo{
+   margin-right: auto;
+   font-size: 40px;
+   color:white;
+}
+
+.header .flex .nav a{
+   margin-left: 15px;
+   font-size: 25px;
+   color:white;
+}
+
+.header .flex .cart{
+   margin-left: 15px;
+   font-size: 25px;
+   color:white;
+}
+
+.header .flex .nav a:hover{
+   color:blue;
+}
+
+.header .flex .cart:hover{
+   color:blue;
+}
+
+.msg{
+   background-color: blue;
+   position: sticky;
+   padding:7px 7px;
+   top:0; left:0;
+   z-index: 10000;
+   max-width: 1200px;
+   border-radius: 2px;
+   background-color: white;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:7px;
+}
+
+.msg span{
+   font-size: 20px;
+   color:black;
+}
+
+.display table{
+   width: 100%;
+   text-align: center;
+}
+
+.display .empty{
+   margin-bottom: 2px;
+   color:black;
+   font-size: 20px;
+   padding:8px;
+}
+
+.display table thead th{
+   padding:8px;
+   font-size: 20px;
+   background-color: black;
+   color:white;
+}
+
+.edit{
+   position: fixed;
+   align-items: center;
+   top:0; left:0;
+   z-index: 1100;
+   padding:15px;
+   justify-content: center;
+   min-height: 100px;
+   display: none;
+   width: 100%;
+}
+
+.edit form{
+   width: 400px;
+   text-align: center;
+   border-radius: 4px;
+   padding:20px;
+   background-color: white;
+}
+
+.edit form .box{
+   width: 100%;
+   font-size: 15px;
+   padding:4px 4px;
+   border-radius: 4px;
+   margin:2px 0;
+   color:black;
+   text-transform: none;
+}
+
+.checkout form{
+   padding:7px;
+   border-radius: 4px;
+}
+
+.checkout form .flex{
+   flex-wrap: wrap;
+   display: flex;
+   gap:4px;
+}
+
+.checkout form .flex .inputBox{
+   flex:1 1 40rem;
+}
+
+.checkout form .flex .inputBox span{
+   color:black;
+   font-size: 20px;
+
+}
+
+.checkout form .flex .inputBox input,
+.checkout form .flex .inputBox select{
+   width: 100%;
+   text-transform: none;
+   background-color: white;
+    padding:2px 3px;
+   font-size:20px;
+   border-radius: 4px;
+   color:black;
+   margin:2px 0;
+}
+
+.display-order{
+   max-width: 600px;
+   border-radius: 4px;
+   background-color: white;
+   text-align: center;
+   margin:0 auto;
+   padding:10px;
+   margin-bottom: 10px;
+}
+
+.display-order span{
+   display: inline-block;
+   font-size: 20px;
+   border-radius: 4px;
+   color:black;
+   padding:4px 4px;
+   margin:4px;
+}
+
+.display-order span.grand-total{
+   width: 100%;
+   margin-top: 4px;
+   background-color: red;
+   padding:8px;
+   color:white;
+}
+
+.order-message-container{
+   position: fixed;
+   height: 100vh;
+   top:0; left:0;
+   justify-content: center;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   align-items: center;
+   padding:4px;
+   display: flex;
+   z-index: 1100;
+   width: 100%;
+}
+
+.order-message-container .message-container{
+  text-align: center;
+   width: 50rem;
+   background-color: white;
+   padding:4px;
+   border-radius: 4px;
+
+}
+
+.order-message-container .message-container h3{
+   font-size: 20px;
+   color:black;
+}
+
+.order-message-container .message-container .order-detail span{
+   background-color:white;
+   font-size: 15px;
+   border-radius: 4px;
+   color:black;
+   display: inline-block;
+    margin:2px;
+   padding:2px 3px;
+}
+
+.order-message-container .message-container .order-detail{
+   border-radius: 4px;
+    margin:2px 0;
+   padding:2px;
+}
+
+.order-message-container .message-container .order-detail span.total{
+   display: block;
+   color:white;
+   background: red;
+}
+
+.order-message-container .message-container .customer-details p{
+   padding:4px 0;
+    color:black;
+   font-size: 15px;
+}
+
+.order-message-container .message-container .customer-details{
+   margin:2px 0;
+}
+
+.order-message-container .message-container .customer-details p span{
+   color:blue;
+   text-transform: none;
+   padding:0 2px;
+
+}
+
+.form-container{
+   padding:25px;
+   min-height: 100vh;
+   display: flex;
+   background: #F5F2E7;
+   align-items: center;
+   padding-bottom: 60px;
+   justify-content: center;
+}
+
+.form-container form{
+   border-radius: 4px;
+   padding:25px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #EFEFEF;
+   width: 550px;
+   text-align: center;
+}
+
+
+.form-container form input,
+.form-container form select{
+   width: 95%;
+   font-size: 20px;
+   border-radius: 4px;
+   margin:8px 0;
+   padding:12px 16px;
+   background: #EFEFEF;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   margin-bottom: 13px;
+   color:darkblue;
+   text-transform: uppercase;
+}
+
+.form-container form .form-btn{
+   color:#DA1212;
+   background: #F9C5D5;
+   font-size: 22px;
+   cursor: pointer;
+   text-transform: capitalize;
+}
+
+.form-container form .form-btn:hover{
+   color:white;
+   background: #DA1212;
+}
+
+.form-container form .error-msg{
+   background: #DA1212;
+   border-radius: 4px;
+   color:white;
+   font-size: 22px;
+   display: block;
+   padding:12px;
+   margin:13px 0;
+}
+
+.form-container form p{
+   margin-top: 11px;
+   font-size: 20px;
+   color:#524A4E;
+}
+
+.products .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   gap:1.5rem;
+   justify-content: center;
+}
+
+.products .box-container .box{
+   text-align: center;
+   padding:2rem;
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   border-radius: .5rem;
+}
+
+.products .box-container .box img{
+   height: 200px;
+}
+
+.products .box-container .box h3{
+   margin:1rem 0;
+   font-size: 2.5rem;
+   color:darkblue;
+}
+
+.products .box-container .box .price{
+   font-size: 2.5rem;
+   color:black;
+}
+
+.heading{
+   text-align: center;
+   font-size: 3.5rem;
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 2rem;
+}
+
+.shopping-cart table{
+   text-align: center;
+   width: 100%;
+}
+
+.shopping-cart table thead th{
+   padding:1.5rem;
+   font-size: 2rem;
+   color:white;
+   background-color: black;
+}
+
+.shopping-cart table tr td{
+   border-bottom: var(--border);
+   padding:1.5rem;
+   font-size: 2rem;
+   color:black;
+}
+
+.shopping-cart table input[type="number"]{
+   border: var(--border);
+   padding:1rem 2rem;
+   font-size: 2rem;
+   color:var(--black);
+   width: 10rem;
+}
+
+.shopping-cart table input[type="submit"]{
+   padding:.5rem 1.5rem;
+   cursor: pointer;
+   font-size: 2rem;
+   background-color: var(--orange);
+   color:var(--white);
+}
+
+.shopping-cart table input[type="submit"]:hover{
+   background-color: var(--black);
+}
+
+.shopping-cart .checkout-btn{
+   text-align: center;
+   margin-top: 1rem;
+}
+
+.shopping-cart .checkout-btn a{
+   display: inline-block;
+   width: auto;
+}
+
+.shopping-cart .checkout-btn a.disabled{
+   pointer-events: none;
+   opacity: .5;
+   user-select: none;
+   background-color: red;
+}
